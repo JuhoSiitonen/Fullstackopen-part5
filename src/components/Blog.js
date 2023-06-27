@@ -11,7 +11,6 @@ const Blog = ({ blog, addNewLike, deleteBlog, user }) => {
 
   const toggleVisibility = () => {
     setVisible(!visible)
-    console.log(blog)
   }
 
   const blogStyle = {
@@ -48,11 +47,11 @@ const Blog = ({ blog, addNewLike, deleteBlog, user }) => {
 
   return (
     <div style={blogStyle}>
-      <div style={hideWhenVisible}>
+      <div style={hideWhenVisible} className='blog'>
         {blog.title} {blog.author}
         <button onClick={toggleVisibility}>view</button>
       </div>
-      <div style={showWhenVisible}>
+      <div style={showWhenVisible} className='hiddenAsDefault'>
         {blog.title} {blog.author} <button onClick={toggleVisibility}>hide</button>
         <br></br>
         {blog.url}
