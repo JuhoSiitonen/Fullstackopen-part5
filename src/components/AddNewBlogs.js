@@ -61,7 +61,7 @@ const AddNewBlogs = ({ handleNewBlog }) => {
         />
       </div>
       <div>
-        <button type='submit'>create</button>
+        <button type='submit' id='createButton'>create</button>
       </div>
     </form>
   )}

@@ -42,7 +42,7 @@ const Blog = ({ blog, addNewLike, deleteBlog, user }) => {
 
   const deleteButton = () => {
     return(
-      <button onClick={handleDeletion}>remove</button>
+      <button onClick={handleDeletion} id='removebutton'>remove</button>
     )}
 
   return (
